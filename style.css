@@ -1,0 +1,16 @@
+body{
+    background-color: rgb(255, 247, 247);
+}
+
+.navbar{
+    background-color: rgb(9, 6, 112);
+    color: white;
+    height: 70px;
+    width: 100%;
+}
+
+
+
+.h1{
+    text-align: center;
+}

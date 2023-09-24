@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./style.css" rel="stylesheet">
+    <link href="./node_modules/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+    <title>Proyecto3</title>
+</head>
+
+<body>
+    <header>
+        <!-- navbar -->
+        <nav class="navbar justify-content-center">
+            <h1>Proyecto3</h1>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <div class="container">
+                <div class="container mt-5">
+                    <div class="row" id="formulario">
+                        <div class="col-12">
+                        <div class="mb-3">
+                            <label class="form-label">Fecha Inicio</label>
+                            <input type="number" class="form-control" id="inputInicio" placeholder="Fecha Inicio">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Fecha Final</label>
+                            <input type="number" class="form-control" id="inputFinal" placeholder="Fecha Final">
+                        </div>
+
+                        <!-- Botones -->
+                        <div class="container">
+                            <button type="submit" class="btn btn-primary" id="btnAdd" onclick="addData()">Buscar
+                                Datos</button>
+                        </div>
+                    </div>
+                    </div>
+                    <hr>
+        </section>
+        <section>
+            <div class="row">
+                <div class="col-4">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Fecha</th>
+                                <th scope="col">Valor</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="col-8"></div>
+            </div>
+
+        </section>
+    </main>
+
+
+
+    <div style="width: 800px;">
+        <canvas id="acquisitions"></canvas>
+    </div>
+    <script type="module" src="./app.js"></script>
+</body>
+
+</html>
